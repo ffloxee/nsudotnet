@@ -1,5 +1,0 @@
-c:\users\faina\documents\visual studio 2015\Projects\LinesCounter\LinesCounter\bin\Debug\LinesCounter.exe.config
-c:\users\faina\documents\visual studio 2015\Projects\LinesCounter\LinesCounter\bin\Debug\LinesCounter.exe
-c:\users\faina\documents\visual studio 2015\Projects\LinesCounter\LinesCounter\bin\Debug\LinesCounter.pdb
-c:\users\faina\documents\visual studio 2015\Projects\LinesCounter\LinesCounter\obj\Debug\LinesCounter.exe
-c:\users\faina\documents\visual studio 2015\Projects\LinesCounter\LinesCounter\obj\Debug\LinesCounter.pdb
