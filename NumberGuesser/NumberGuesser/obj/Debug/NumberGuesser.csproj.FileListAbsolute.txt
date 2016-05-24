@@ -1,6 +1,0 @@
-c:\users\faina\documents\visual studio 2015\Projects\NumberGuesser\NumberGuesser\bin\Debug\NumberGuesser.exe.config
-c:\users\faina\documents\visual studio 2015\Projects\NumberGuesser\NumberGuesser\bin\Debug\NumberGuesser.exe
-c:\users\faina\documents\visual studio 2015\Projects\NumberGuesser\NumberGuesser\bin\Debug\NumberGuesser.pdb
-c:\users\faina\documents\visual studio 2015\Projects\NumberGuesser\NumberGuesser\obj\Debug\NumberGuesser.csprojResolveAssemblyReference.cache
-c:\users\faina\documents\visual studio 2015\Projects\NumberGuesser\NumberGuesser\obj\Debug\NumberGuesser.exe
-c:\users\faina\documents\visual studio 2015\Projects\NumberGuesser\NumberGuesser\obj\Debug\NumberGuesser.pdb
