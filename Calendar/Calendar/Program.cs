@@ -39,13 +39,10 @@ namespace Calendar
             int dayInMonth = DateTime.DaysInMonth(date.Year, date.Month);
 
             DateTime firstDate = new DateTime(date.Year, date.Month, 1);
-            int count = (int)firstDate.DayOfWeek;
-            if (count == 0)
-            {
-                count = 7;
-            }
+            DayOfWeek doweek = firstDate.DayOfWeek;
 
-            for (int i = 1; i < count; i++)
+
+            for (int i = 1; i < (int) doweek; i++)
             {
                 Console.Write("\t");
             }
@@ -70,28 +67,30 @@ namespace Calendar
                     }
                 }
                 Console.Write("   {0}\t", i);
-                switch (count)
+                switch (doweek)
                 {
-                    case 5:
+                    case DayOfWeek.Friday:
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
                             break;
                         }
-                    case 6:
+                    case DayOfWeek.Saturday:
                         {
                             dayInMonth--;
+                          
                             break;
                         }
-                    case 7:
+                    case DayOfWeek.Sunday:
                         {
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.Write("\n");
                             dayInMonth--;
-                            count = 0;
+                    
                             break;
                         }
                 }
-                count++;
+                if (doweek == DayOfWeek.Saturday) doweek = DayOfWeek.Sunday;
+                else doweek++;
             }
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\nThe number of weekdays {0}", dayInMonth);
