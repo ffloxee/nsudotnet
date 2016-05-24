@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
@@ -51,6 +51,8 @@ namespace RSS2Email
             Message.Body = description;
 
             Smtp.Send(Message);
+            Message.Dispose();
+            Smtp.Dispose();
         }
         private DateTime StringToDate(string dateString)
         {
