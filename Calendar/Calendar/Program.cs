@@ -9,8 +9,6 @@ namespace Calendar
     class Program
     {
 
-        private static object[] _week = new object[]{ DayOfWeek.Monday, DayOfWeek.Tuesday, DayOfWeek.Wednesday, DayOfWeek.Thursday, DayOfWeek.Friday, DayOfWeek.Saturday, DayOfWeek.Sunday };
-
         static void Main(string[] args)
         {
             DateTime date = new DateTime();
@@ -28,11 +26,16 @@ namespace Calendar
 
             Console.ForegroundColor = ConsoleColor.White;
 
+            int dayOfWeek = (int)date.DayOfWeek;
+            DateTime day = date.AddDays(1 - dayOfWeek);
+
             for (int i = 0; i < 7; i++)
             {
-                Console.Write("{0} ", _week[i]);
+                Console.Write("   {0}\t", day.ToString("ddd"));
+                day = day.AddDays(1);
             }
-            Console.Write("\n");
+            Console.WriteLine();
+
             int dayInMonth = DateTime.DaysInMonth(date.Year, date.Month);
 
             DateTime firstDate = new DateTime(date.Year, date.Month, 1);
