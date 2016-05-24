@@ -25,7 +25,7 @@ namespace Calendar
             }
 
             Console.ForegroundColor = ConsoleColor.White;
-
+            // исправлен "хардкод" с днями недели
             int dayOfWeek = (int)date.DayOfWeek;
             DateTime day = date.AddDays(1 - dayOfWeek);
 
