@@ -6,7 +6,7 @@ namespace NumberGuesser
     {
         static void Main(string[] args)
         {
-            DateTime open = DateTime.Now;
+            DateTime start = DateTime.Now;
             Random random = new Random();
             int number = random.Next(100);
             int retryCounter = 0;
@@ -71,15 +71,15 @@ namespace NumberGuesser
             }
             while (number != intAnswer);
 
-            DateTime close = DateTime.Now;
-            TimeSpan interval = close - open;
+            int time = (int)DateTime.Now.Subtract(start).TotalMinutes;
+
             Console.WriteLine("Well. You coped in {0} steps:", retryCounter);
             for (int i = 0; i < retryCounter; i++)
             {
                 Console.WriteLine("{0}", memoryArray[i]);
             }
             Console.WriteLine("{0} , this is my number. You're smarter than I thought.", number);
-            Console.WriteLine("\nYou spent it {0} minutes of your miserable life.\nPress any key...", interval.Minutes);
+            Console.WriteLine("\nYou spent it {0} minutes of your miserable life.\nPress any key...", time);
             Console.Read();
         }
     }
