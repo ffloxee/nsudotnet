@@ -1,0 +1,6 @@
+c:\users\faina\documents\visual studio 2015\Projects\Rss2Email\Rss2Email\bin\Debug\Rss2Email.exe.config
+c:\users\faina\documents\visual studio 2015\Projects\Rss2Email\Rss2Email\obj\Debug\Rss2Email.csprojResolveAssemblyReference.cache
+c:\users\faina\documents\visual studio 2015\Projects\Rss2Email\Rss2Email\bin\Debug\Rss2Email.exe
+c:\users\faina\documents\visual studio 2015\Projects\Rss2Email\Rss2Email\bin\Debug\Rss2Email.pdb
+c:\users\faina\documents\visual studio 2015\Projects\Rss2Email\Rss2Email\obj\Debug\Rss2Email.exe
+c:\users\faina\documents\visual studio 2015\Projects\Rss2Email\Rss2Email\obj\Debug\Rss2Email.pdb
