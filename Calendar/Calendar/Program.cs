@@ -9,19 +9,19 @@ namespace Calendar
     class Program
     {
 
-        private static String[] _week = new String[7] { " Mon\t ", " Tue\t ", " Wed\t ", " Thu\t ", " Fri\t ", " Sat\t ", " Sun\t " };
+        private static object[] _week = new object[]{ DayOfWeek.Monday, DayOfWeek.Tuesday, DayOfWeek.Wednesday, DayOfWeek.Thursday, DayOfWeek.Friday, DayOfWeek.Saturday, DayOfWeek.Sunday };
 
         static void Main(string[] args)
         {
             DateTime date = new DateTime();
             DateTime today = DateTime.Today;
 
-            Console.WriteLine("Hey! Please, enter date in normal format.");
+            Console.WriteLine("Please, enter date:");
             String stringDate = Console.ReadLine();
 
             if (!DateTime.TryParse(stringDate, out date))
             {
-                Console.WriteLine("This is a wrong date format.\nPress any key.");
+                Console.WriteLine("This is a wrong date format.\nPress any key...");
                 Console.Read();
                 Environment.Exit(0);
             }
@@ -30,7 +30,7 @@ namespace Calendar
 
             for (int i = 0; i < 7; i++)
             {
-                Console.Write(_week[i]);
+                Console.Write("{0} ", _week[i]);
             }
             Console.Write("\n");
             int dayInMonth = DateTime.DaysInMonth(date.Year, date.Month);
@@ -44,19 +44,19 @@ namespace Calendar
 
             for (int i = 1; i < count; i++)
             {
-                Console.Write("  \t");
+                Console.Write("\t");
             }
 
             for (int i = 1; i <= DateTime.DaysInMonth(date.Year, date.Month); i++)
             {
-                if ((i == (int)today.Day) && (today.Month.Equals(date.Month)) && (today.Year.Equals(date.Year)))
+                if ((i == today.Day) && (today.Month == date.Month) && (today.Year == date.Year))
                 {
                     Console.BackgroundColor = ConsoleColor.Gray;
 
                 }
                 else
                 {
-                    if (i == (int)date.Day)
+                    if (i == date.Day)
                     {
                         Console.BackgroundColor = ConsoleColor.Blue;
                     }
@@ -66,7 +66,7 @@ namespace Calendar
 
                     }
                 }
-                Console.Write(" {0}\t", i);
+                Console.Write("   {0}\t", i);
                 switch (count)
                 {
                     case 5:
