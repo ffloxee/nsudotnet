@@ -1,5 +1,0 @@
-c:\users\faina\documents\visual studio 2015\Projects\Calendar\Calendar\bin\Debug\Calendar.exe.config
-c:\users\faina\documents\visual studio 2015\Projects\Calendar\Calendar\bin\Debug\Calendar.exe
-c:\users\faina\documents\visual studio 2015\Projects\Calendar\Calendar\bin\Debug\Calendar.pdb
-c:\users\faina\documents\visual studio 2015\Projects\Calendar\Calendar\obj\Debug\Calendar.exe
-c:\users\faina\documents\visual studio 2015\Projects\Calendar\Calendar\obj\Debug\Calendar.pdb
